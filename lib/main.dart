@@ -1,17 +1,9 @@
 // ignore_for_file: prefer_const_constructors
-
 import 'package:flutter/material.dart';
-
-import 'telas/Home_page.dart';
 import 'constants.dart';
+import 'startpage.dart';
 
-void main() => runApp(MyApp());
-
-
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+void main() => runApp(MaterialApp(
       debugShowCheckedModeBanner: false,
       title:'Flutter Receitas',
       theme: ThemeData(
@@ -30,6 +22,6 @@ class MyApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home:HomePage(),
-    );
-  }
-}
+      
+    ));
+
